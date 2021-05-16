@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5630797629261936410}
   - component: {fileID: 4049758677764802289}
   m_Layer: 0
-  m_Name: handles
+  m_Name: Handrails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
