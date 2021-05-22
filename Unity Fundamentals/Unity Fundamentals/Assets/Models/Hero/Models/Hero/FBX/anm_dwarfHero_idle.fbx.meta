@@ -1,267 +1,785 @@
 fileFormatVersion: 2
 guid: 1521326e350991c4882960280a572da6
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Beard_1_Con
-    100004: Beard_1_Jnt
-    100006: Beard_2_Con
-    100008: Beard_2_Jnt
-    100010: Beard_3_Con
-    100012: Beard_3_Jnt
-    100014: Beard_4_Con
-    100016: Beard_4_Jnt
-    100018: Beard_5_Jnt
-    100020: Beard_Spline_Curve
-    100022: Beard_Spline_Group
-    100024: Center_Con
-    100026: Center_Jnt
-    100028: Chest_Con
-    100030: Chest_Jnt
-    100032: DwarfHero_Model
-    100034: EyeBall_Con
-    100036: Global_Transform_Con
-    100038: grp_Beard_1_Con
-    100040: grp_Beard_2_Con
-    100042: grp_Beard_3_Con
-    100044: grp_Beard_4_Con
-    100046: Head_Con
-    100048: Head_Jnt
-    100050: Jaw_Con
-    100052: Jaw_Jnt
-    100054: L_Ankle_Jnt
-    100056: L_Arm_Ik
-    100058: L_Arm_Pol_Con
-    100060: L_Ball_Ik
-    100062: L_Ball_Jnt
-    100064: L_Clav_Con
-    100066: L_Clav_Jnt
-    100068: L_Elbow_Jnt
-    100070: L_EyeBall_Con
-    100072: L_EyeBall_Jnt
-    100074: L_EyeLid_Down_Jnt
-    100076: L_EyeLid_Up_Jnt
-    100078: L_Foot_Con
-    100080: L_Hand_Con
-    100082: L_Hip_Jnt
-    100084: L_Index_1_Jnt
-    100086: L_Index_2_Jnt
-    100088: L_Index_3_Jnt
-    100090: L_Inv_Ankle_Jnt
-    100092: L_Inv_Ball_Jnt
-    100094: L_Inv_Heel_Jnt
-    100096: L_Inv_Toe_Jnt
-    100098: L_Knee_Jnt
-    100100: L_Leg_Ik
-    100102: L_Leg_Pol_Con
-    100104: L_Little_1_Jnt
-    100106: L_Little_2_Jnt
-    100108: L_Little_3_Jnt
-    100110: L_Middle_1_Jnt
-    100112: L_Middle_2_Jnt
-    100114: L_Middle_3_Jnt
-    100116: L_Pauldron_Con
-    100118: L_Pauldron_Jnt
-    100120: L_Ring_1_Jnt
-    100122: L_Ring_2_Jnt
-    100124: L_Ring_3_Jnt
-    100126: L_Shoulder_Jnt
-    100128: L_Thumb_1_Jnt
-    100130: L_Thumb_2_Jnt
-    100132: L_Thumb_3_Jnt
-    100134: L_Toe_Ik
-    100136: L_Toe_Jnt
-    100138: L_Wrist_Jnt
-    100140: L_Wrist_Ornt_Con
-    100142: Neck_Con
-    100144: Neck_Jnt
-    100146: Pelv_Con
-    100148: Pelv_Jnt
-    100150: R_Ankle_Jnt
-    100152: R_Arm_Ik
-    100154: R_Arm_Pol_Con
-    100156: R_Ball_Ik
-    100158: R_Ball_Jnt
-    100160: R_Clav_Con
-    100162: R_Clav_Jnt
-    100164: R_Elbow_Jnt
-    100166: R_EyeBall_Con
-    100168: R_EyeBall_Jnt
-    100170: R_EyeLid_Down_Jnt
-    100172: R_EyeLid_Up_Jnt
-    100174: R_Foot_Con
-    100176: R_Hand_Con
-    100178: R_Hip_Jnt
-    100180: R_Index_1_Jnt
-    100182: R_Index_2_Jnt
-    100184: R_Index_3_Jnt
-    100186: R_Inv_Ankle_Jnt
-    100188: R_Inv_Ball_Jnt
-    100190: R_Inv_Heel_Jnt
-    100192: R_Inv_Toe_Jnt
-    100194: R_Knee_Jnt
-    100196: R_Leg_Ik
-    100198: R_Leg_Pol_Con
-    100200: R_Little_1_Jnt
-    100202: R_Little_2_Jnt
-    100204: R_Little_3_Jnt
-    100206: R_Middle_1_Jnt
-    100208: R_Middle_2_Jnt
-    100210: R_Middle_3_Jnt
-    100212: R_Pauldron_Con
-    100214: R_Pauldron_Jnt
-    100216: R_Ring_1_Jnt
-    100218: R_Ring_2_Jnt
-    100220: R_Ring_3_Jnt
-    100222: R_Shoulder_Jnt
-    100224: R_Thumb_1_Jnt
-    100226: R_Thumb_2_Jnt
-    100228: R_Thumb_3_Jnt
-    100230: R_Toe_Ik
-    100232: R_Toe_Jnt
-    100234: R_Wrist_Jnt
-    100236: R_Wrist_Ornt_Con
-    100238: Rig_Group
-    100240: Root_Jnt
-    100242: Spine_1_Con
-    100244: Spine_1_Jnt
-    100246: Spine_2_Con
-    100248: Spine_2_Jnt
-    100250: Spine_3_Con
-    100252: Spine_3_Jnt
-    400000: //RootNode
-    400002: Beard_1_Con
-    400004: Beard_1_Jnt
-    400006: Beard_2_Con
-    400008: Beard_2_Jnt
-    400010: Beard_3_Con
-    400012: Beard_3_Jnt
-    400014: Beard_4_Con
-    400016: Beard_4_Jnt
-    400018: Beard_5_Jnt
-    400020: Beard_Spline_Curve
-    400022: Beard_Spline_Group
-    400024: Center_Con
-    400026: Center_Jnt
-    400028: Chest_Con
-    400030: Chest_Jnt
-    400032: DwarfHero_Model
-    400034: EyeBall_Con
-    400036: Global_Transform_Con
-    400038: grp_Beard_1_Con
-    400040: grp_Beard_2_Con
-    400042: grp_Beard_3_Con
-    400044: grp_Beard_4_Con
-    400046: Head_Con
-    400048: Head_Jnt
-    400050: Jaw_Con
-    400052: Jaw_Jnt
-    400054: L_Ankle_Jnt
-    400056: L_Arm_Ik
-    400058: L_Arm_Pol_Con
-    400060: L_Ball_Ik
-    400062: L_Ball_Jnt
-    400064: L_Clav_Con
-    400066: L_Clav_Jnt
-    400068: L_Elbow_Jnt
-    400070: L_EyeBall_Con
-    400072: L_EyeBall_Jnt
-    400074: L_EyeLid_Down_Jnt
-    400076: L_EyeLid_Up_Jnt
-    400078: L_Foot_Con
-    400080: L_Hand_Con
-    400082: L_Hip_Jnt
-    400084: L_Index_1_Jnt
-    400086: L_Index_2_Jnt
-    400088: L_Index_3_Jnt
-    400090: L_Inv_Ankle_Jnt
-    400092: L_Inv_Ball_Jnt
-    400094: L_Inv_Heel_Jnt
-    400096: L_Inv_Toe_Jnt
-    400098: L_Knee_Jnt
-    400100: L_Leg_Ik
-    400102: L_Leg_Pol_Con
-    400104: L_Little_1_Jnt
-    400106: L_Little_2_Jnt
-    400108: L_Little_3_Jnt
-    400110: L_Middle_1_Jnt
-    400112: L_Middle_2_Jnt
-    400114: L_Middle_3_Jnt
-    400116: L_Pauldron_Con
-    400118: L_Pauldron_Jnt
-    400120: L_Ring_1_Jnt
-    400122: L_Ring_2_Jnt
-    400124: L_Ring_3_Jnt
-    400126: L_Shoulder_Jnt
-    400128: L_Thumb_1_Jnt
-    400130: L_Thumb_2_Jnt
-    400132: L_Thumb_3_Jnt
-    400134: L_Toe_Ik
-    400136: L_Toe_Jnt
-    400138: L_Wrist_Jnt
-    400140: L_Wrist_Ornt_Con
-    400142: Neck_Con
-    400144: Neck_Jnt
-    400146: Pelv_Con
-    400148: Pelv_Jnt
-    400150: R_Ankle_Jnt
-    400152: R_Arm_Ik
-    400154: R_Arm_Pol_Con
-    400156: R_Ball_Ik
-    400158: R_Ball_Jnt
-    400160: R_Clav_Con
-    400162: R_Clav_Jnt
-    400164: R_Elbow_Jnt
-    400166: R_EyeBall_Con
-    400168: R_EyeBall_Jnt
-    400170: R_EyeLid_Down_Jnt
-    400172: R_EyeLid_Up_Jnt
-    400174: R_Foot_Con
-    400176: R_Hand_Con
-    400178: R_Hip_Jnt
-    400180: R_Index_1_Jnt
-    400182: R_Index_2_Jnt
-    400184: R_Index_3_Jnt
-    400186: R_Inv_Ankle_Jnt
-    400188: R_Inv_Ball_Jnt
-    400190: R_Inv_Heel_Jnt
-    400192: R_Inv_Toe_Jnt
-    400194: R_Knee_Jnt
-    400196: R_Leg_Ik
-    400198: R_Leg_Pol_Con
-    400200: R_Little_1_Jnt
-    400202: R_Little_2_Jnt
-    400204: R_Little_3_Jnt
-    400206: R_Middle_1_Jnt
-    400208: R_Middle_2_Jnt
-    400210: R_Middle_3_Jnt
-    400212: R_Pauldron_Con
-    400214: R_Pauldron_Jnt
-    400216: R_Ring_1_Jnt
-    400218: R_Ring_2_Jnt
-    400220: R_Ring_3_Jnt
-    400222: R_Shoulder_Jnt
-    400224: R_Thumb_1_Jnt
-    400226: R_Thumb_2_Jnt
-    400228: R_Thumb_3_Jnt
-    400230: R_Toe_Ik
-    400232: R_Toe_Jnt
-    400234: R_Wrist_Jnt
-    400236: R_Wrist_Ornt_Con
-    400238: Rig_Group
-    400240: Root_Jnt
-    400242: Spine_1_Con
-    400244: Spine_1_Jnt
-    400246: Spine_2_Con
-    400248: Spine_2_Jnt
-    400250: Spine_3_Con
-    400252: Spine_3_Jnt
-    4300000: DwarfHero_Model
-    7400000: anm_dwarfHero_idle
-    9500000: //RootNode
-    13700000: DwarfHero_Model
-    2186277476908879412: ImportLogs
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Beard_1_Con
+  - first:
+      1: 100004
+    second: Beard_1_Jnt
+  - first:
+      1: 100006
+    second: Beard_2_Con
+  - first:
+      1: 100008
+    second: Beard_2_Jnt
+  - first:
+      1: 100010
+    second: Beard_3_Con
+  - first:
+      1: 100012
+    second: Beard_3_Jnt
+  - first:
+      1: 100014
+    second: Beard_4_Con
+  - first:
+      1: 100016
+    second: Beard_4_Jnt
+  - first:
+      1: 100018
+    second: Beard_5_Jnt
+  - first:
+      1: 100020
+    second: Beard_Spline_Curve
+  - first:
+      1: 100022
+    second: Beard_Spline_Group
+  - first:
+      1: 100024
+    second: Center_Con
+  - first:
+      1: 100026
+    second: Center_Jnt
+  - first:
+      1: 100028
+    second: Chest_Con
+  - first:
+      1: 100030
+    second: Chest_Jnt
+  - first:
+      1: 100032
+    second: DwarfHero_Model
+  - first:
+      1: 100034
+    second: EyeBall_Con
+  - first:
+      1: 100036
+    second: Global_Transform_Con
+  - first:
+      1: 100038
+    second: grp_Beard_1_Con
+  - first:
+      1: 100040
+    second: grp_Beard_2_Con
+  - first:
+      1: 100042
+    second: grp_Beard_3_Con
+  - first:
+      1: 100044
+    second: grp_Beard_4_Con
+  - first:
+      1: 100046
+    second: Head_Con
+  - first:
+      1: 100048
+    second: Head_Jnt
+  - first:
+      1: 100050
+    second: Jaw_Con
+  - first:
+      1: 100052
+    second: Jaw_Jnt
+  - first:
+      1: 100054
+    second: L_Ankle_Jnt
+  - first:
+      1: 100056
+    second: L_Arm_Ik
+  - first:
+      1: 100058
+    second: L_Arm_Pol_Con
+  - first:
+      1: 100060
+    second: L_Ball_Ik
+  - first:
+      1: 100062
+    second: L_Ball_Jnt
+  - first:
+      1: 100064
+    second: L_Clav_Con
+  - first:
+      1: 100066
+    second: L_Clav_Jnt
+  - first:
+      1: 100068
+    second: L_Elbow_Jnt
+  - first:
+      1: 100070
+    second: L_EyeBall_Con
+  - first:
+      1: 100072
+    second: L_EyeBall_Jnt
+  - first:
+      1: 100074
+    second: L_EyeLid_Down_Jnt
+  - first:
+      1: 100076
+    second: L_EyeLid_Up_Jnt
+  - first:
+      1: 100078
+    second: L_Foot_Con
+  - first:
+      1: 100080
+    second: L_Hand_Con
+  - first:
+      1: 100082
+    second: L_Hip_Jnt
+  - first:
+      1: 100084
+    second: L_Index_1_Jnt
+  - first:
+      1: 100086
+    second: L_Index_2_Jnt
+  - first:
+      1: 100088
+    second: L_Index_3_Jnt
+  - first:
+      1: 100090
+    second: L_Inv_Ankle_Jnt
+  - first:
+      1: 100092
+    second: L_Inv_Ball_Jnt
+  - first:
+      1: 100094
+    second: L_Inv_Heel_Jnt
+  - first:
+      1: 100096
+    second: L_Inv_Toe_Jnt
+  - first:
+      1: 100098
+    second: L_Knee_Jnt
+  - first:
+      1: 100100
+    second: L_Leg_Ik
+  - first:
+      1: 100102
+    second: L_Leg_Pol_Con
+  - first:
+      1: 100104
+    second: L_Little_1_Jnt
+  - first:
+      1: 100106
+    second: L_Little_2_Jnt
+  - first:
+      1: 100108
+    second: L_Little_3_Jnt
+  - first:
+      1: 100110
+    second: L_Middle_1_Jnt
+  - first:
+      1: 100112
+    second: L_Middle_2_Jnt
+  - first:
+      1: 100114
+    second: L_Middle_3_Jnt
+  - first:
+      1: 100116
+    second: L_Pauldron_Con
+  - first:
+      1: 100118
+    second: L_Pauldron_Jnt
+  - first:
+      1: 100120
+    second: L_Ring_1_Jnt
+  - first:
+      1: 100122
+    second: L_Ring_2_Jnt
+  - first:
+      1: 100124
+    second: L_Ring_3_Jnt
+  - first:
+      1: 100126
+    second: L_Shoulder_Jnt
+  - first:
+      1: 100128
+    second: L_Thumb_1_Jnt
+  - first:
+      1: 100130
+    second: L_Thumb_2_Jnt
+  - first:
+      1: 100132
+    second: L_Thumb_3_Jnt
+  - first:
+      1: 100134
+    second: L_Toe_Ik
+  - first:
+      1: 100136
+    second: L_Toe_Jnt
+  - first:
+      1: 100138
+    second: L_Wrist_Jnt
+  - first:
+      1: 100140
+    second: L_Wrist_Ornt_Con
+  - first:
+      1: 100142
+    second: Neck_Con
+  - first:
+      1: 100144
+    second: Neck_Jnt
+  - first:
+      1: 100146
+    second: Pelv_Con
+  - first:
+      1: 100148
+    second: Pelv_Jnt
+  - first:
+      1: 100150
+    second: R_Ankle_Jnt
+  - first:
+      1: 100152
+    second: R_Arm_Ik
+  - first:
+      1: 100154
+    second: R_Arm_Pol_Con
+  - first:
+      1: 100156
+    second: R_Ball_Ik
+  - first:
+      1: 100158
+    second: R_Ball_Jnt
+  - first:
+      1: 100160
+    second: R_Clav_Con
+  - first:
+      1: 100162
+    second: R_Clav_Jnt
+  - first:
+      1: 100164
+    second: R_Elbow_Jnt
+  - first:
+      1: 100166
+    second: R_EyeBall_Con
+  - first:
+      1: 100168
+    second: R_EyeBall_Jnt
+  - first:
+      1: 100170
+    second: R_EyeLid_Down_Jnt
+  - first:
+      1: 100172
+    second: R_EyeLid_Up_Jnt
+  - first:
+      1: 100174
+    second: R_Foot_Con
+  - first:
+      1: 100176
+    second: R_Hand_Con
+  - first:
+      1: 100178
+    second: R_Hip_Jnt
+  - first:
+      1: 100180
+    second: R_Index_1_Jnt
+  - first:
+      1: 100182
+    second: R_Index_2_Jnt
+  - first:
+      1: 100184
+    second: R_Index_3_Jnt
+  - first:
+      1: 100186
+    second: R_Inv_Ankle_Jnt
+  - first:
+      1: 100188
+    second: R_Inv_Ball_Jnt
+  - first:
+      1: 100190
+    second: R_Inv_Heel_Jnt
+  - first:
+      1: 100192
+    second: R_Inv_Toe_Jnt
+  - first:
+      1: 100194
+    second: R_Knee_Jnt
+  - first:
+      1: 100196
+    second: R_Leg_Ik
+  - first:
+      1: 100198
+    second: R_Leg_Pol_Con
+  - first:
+      1: 100200
+    second: R_Little_1_Jnt
+  - first:
+      1: 100202
+    second: R_Little_2_Jnt
+  - first:
+      1: 100204
+    second: R_Little_3_Jnt
+  - first:
+      1: 100206
+    second: R_Middle_1_Jnt
+  - first:
+      1: 100208
+    second: R_Middle_2_Jnt
+  - first:
+      1: 100210
+    second: R_Middle_3_Jnt
+  - first:
+      1: 100212
+    second: R_Pauldron_Con
+  - first:
+      1: 100214
+    second: R_Pauldron_Jnt
+  - first:
+      1: 100216
+    second: R_Ring_1_Jnt
+  - first:
+      1: 100218
+    second: R_Ring_2_Jnt
+  - first:
+      1: 100220
+    second: R_Ring_3_Jnt
+  - first:
+      1: 100222
+    second: R_Shoulder_Jnt
+  - first:
+      1: 100224
+    second: R_Thumb_1_Jnt
+  - first:
+      1: 100226
+    second: R_Thumb_2_Jnt
+  - first:
+      1: 100228
+    second: R_Thumb_3_Jnt
+  - first:
+      1: 100230
+    second: R_Toe_Ik
+  - first:
+      1: 100232
+    second: R_Toe_Jnt
+  - first:
+      1: 100234
+    second: R_Wrist_Jnt
+  - first:
+      1: 100236
+    second: R_Wrist_Ornt_Con
+  - first:
+      1: 100238
+    second: Rig_Group
+  - first:
+      1: 100240
+    second: Root_Jnt
+  - first:
+      1: 100242
+    second: Spine_1_Con
+  - first:
+      1: 100244
+    second: Spine_1_Jnt
+  - first:
+      1: 100246
+    second: Spine_2_Con
+  - first:
+      1: 100248
+    second: Spine_2_Jnt
+  - first:
+      1: 100250
+    second: Spine_3_Con
+  - first:
+      1: 100252
+    second: Spine_3_Jnt
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Beard_1_Con
+  - first:
+      4: 400004
+    second: Beard_1_Jnt
+  - first:
+      4: 400006
+    second: Beard_2_Con
+  - first:
+      4: 400008
+    second: Beard_2_Jnt
+  - first:
+      4: 400010
+    second: Beard_3_Con
+  - first:
+      4: 400012
+    second: Beard_3_Jnt
+  - first:
+      4: 400014
+    second: Beard_4_Con
+  - first:
+      4: 400016
+    second: Beard_4_Jnt
+  - first:
+      4: 400018
+    second: Beard_5_Jnt
+  - first:
+      4: 400020
+    second: Beard_Spline_Curve
+  - first:
+      4: 400022
+    second: Beard_Spline_Group
+  - first:
+      4: 400024
+    second: Center_Con
+  - first:
+      4: 400026
+    second: Center_Jnt
+  - first:
+      4: 400028
+    second: Chest_Con
+  - first:
+      4: 400030
+    second: Chest_Jnt
+  - first:
+      4: 400032
+    second: DwarfHero_Model
+  - first:
+      4: 400034
+    second: EyeBall_Con
+  - first:
+      4: 400036
+    second: Global_Transform_Con
+  - first:
+      4: 400038
+    second: grp_Beard_1_Con
+  - first:
+      4: 400040
+    second: grp_Beard_2_Con
+  - first:
+      4: 400042
+    second: grp_Beard_3_Con
+  - first:
+      4: 400044
+    second: grp_Beard_4_Con
+  - first:
+      4: 400046
+    second: Head_Con
+  - first:
+      4: 400048
+    second: Head_Jnt
+  - first:
+      4: 400050
+    second: Jaw_Con
+  - first:
+      4: 400052
+    second: Jaw_Jnt
+  - first:
+      4: 400054
+    second: L_Ankle_Jnt
+  - first:
+      4: 400056
+    second: L_Arm_Ik
+  - first:
+      4: 400058
+    second: L_Arm_Pol_Con
+  - first:
+      4: 400060
+    second: L_Ball_Ik
+  - first:
+      4: 400062
+    second: L_Ball_Jnt
+  - first:
+      4: 400064
+    second: L_Clav_Con
+  - first:
+      4: 400066
+    second: L_Clav_Jnt
+  - first:
+      4: 400068
+    second: L_Elbow_Jnt
+  - first:
+      4: 400070
+    second: L_EyeBall_Con
+  - first:
+      4: 400072
+    second: L_EyeBall_Jnt
+  - first:
+      4: 400074
+    second: L_EyeLid_Down_Jnt
+  - first:
+      4: 400076
+    second: L_EyeLid_Up_Jnt
+  - first:
+      4: 400078
+    second: L_Foot_Con
+  - first:
+      4: 400080
+    second: L_Hand_Con
+  - first:
+      4: 400082
+    second: L_Hip_Jnt
+  - first:
+      4: 400084
+    second: L_Index_1_Jnt
+  - first:
+      4: 400086
+    second: L_Index_2_Jnt
+  - first:
+      4: 400088
+    second: L_Index_3_Jnt
+  - first:
+      4: 400090
+    second: L_Inv_Ankle_Jnt
+  - first:
+      4: 400092
+    second: L_Inv_Ball_Jnt
+  - first:
+      4: 400094
+    second: L_Inv_Heel_Jnt
+  - first:
+      4: 400096
+    second: L_Inv_Toe_Jnt
+  - first:
+      4: 400098
+    second: L_Knee_Jnt
+  - first:
+      4: 400100
+    second: L_Leg_Ik
+  - first:
+      4: 400102
+    second: L_Leg_Pol_Con
+  - first:
+      4: 400104
+    second: L_Little_1_Jnt
+  - first:
+      4: 400106
+    second: L_Little_2_Jnt
+  - first:
+      4: 400108
+    second: L_Little_3_Jnt
+  - first:
+      4: 400110
+    second: L_Middle_1_Jnt
+  - first:
+      4: 400112
+    second: L_Middle_2_Jnt
+  - first:
+      4: 400114
+    second: L_Middle_3_Jnt
+  - first:
+      4: 400116
+    second: L_Pauldron_Con
+  - first:
+      4: 400118
+    second: L_Pauldron_Jnt
+  - first:
+      4: 400120
+    second: L_Ring_1_Jnt
+  - first:
+      4: 400122
+    second: L_Ring_2_Jnt
+  - first:
+      4: 400124
+    second: L_Ring_3_Jnt
+  - first:
+      4: 400126
+    second: L_Shoulder_Jnt
+  - first:
+      4: 400128
+    second: L_Thumb_1_Jnt
+  - first:
+      4: 400130
+    second: L_Thumb_2_Jnt
+  - first:
+      4: 400132
+    second: L_Thumb_3_Jnt
+  - first:
+      4: 400134
+    second: L_Toe_Ik
+  - first:
+      4: 400136
+    second: L_Toe_Jnt
+  - first:
+      4: 400138
+    second: L_Wrist_Jnt
+  - first:
+      4: 400140
+    second: L_Wrist_Ornt_Con
+  - first:
+      4: 400142
+    second: Neck_Con
+  - first:
+      4: 400144
+    second: Neck_Jnt
+  - first:
+      4: 400146
+    second: Pelv_Con
+  - first:
+      4: 400148
+    second: Pelv_Jnt
+  - first:
+      4: 400150
+    second: R_Ankle_Jnt
+  - first:
+      4: 400152
+    second: R_Arm_Ik
+  - first:
+      4: 400154
+    second: R_Arm_Pol_Con
+  - first:
+      4: 400156
+    second: R_Ball_Ik
+  - first:
+      4: 400158
+    second: R_Ball_Jnt
+  - first:
+      4: 400160
+    second: R_Clav_Con
+  - first:
+      4: 400162
+    second: R_Clav_Jnt
+  - first:
+      4: 400164
+    second: R_Elbow_Jnt
+  - first:
+      4: 400166
+    second: R_EyeBall_Con
+  - first:
+      4: 400168
+    second: R_EyeBall_Jnt
+  - first:
+      4: 400170
+    second: R_EyeLid_Down_Jnt
+  - first:
+      4: 400172
+    second: R_EyeLid_Up_Jnt
+  - first:
+      4: 400174
+    second: R_Foot_Con
+  - first:
+      4: 400176
+    second: R_Hand_Con
+  - first:
+      4: 400178
+    second: R_Hip_Jnt
+  - first:
+      4: 400180
+    second: R_Index_1_Jnt
+  - first:
+      4: 400182
+    second: R_Index_2_Jnt
+  - first:
+      4: 400184
+    second: R_Index_3_Jnt
+  - first:
+      4: 400186
+    second: R_Inv_Ankle_Jnt
+  - first:
+      4: 400188
+    second: R_Inv_Ball_Jnt
+  - first:
+      4: 400190
+    second: R_Inv_Heel_Jnt
+  - first:
+      4: 400192
+    second: R_Inv_Toe_Jnt
+  - first:
+      4: 400194
+    second: R_Knee_Jnt
+  - first:
+      4: 400196
+    second: R_Leg_Ik
+  - first:
+      4: 400198
+    second: R_Leg_Pol_Con
+  - first:
+      4: 400200
+    second: R_Little_1_Jnt
+  - first:
+      4: 400202
+    second: R_Little_2_Jnt
+  - first:
+      4: 400204
+    second: R_Little_3_Jnt
+  - first:
+      4: 400206
+    second: R_Middle_1_Jnt
+  - first:
+      4: 400208
+    second: R_Middle_2_Jnt
+  - first:
+      4: 400210
+    second: R_Middle_3_Jnt
+  - first:
+      4: 400212
+    second: R_Pauldron_Con
+  - first:
+      4: 400214
+    second: R_Pauldron_Jnt
+  - first:
+      4: 400216
+    second: R_Ring_1_Jnt
+  - first:
+      4: 400218
+    second: R_Ring_2_Jnt
+  - first:
+      4: 400220
+    second: R_Ring_3_Jnt
+  - first:
+      4: 400222
+    second: R_Shoulder_Jnt
+  - first:
+      4: 400224
+    second: R_Thumb_1_Jnt
+  - first:
+      4: 400226
+    second: R_Thumb_2_Jnt
+  - first:
+      4: 400228
+    second: R_Thumb_3_Jnt
+  - first:
+      4: 400230
+    second: R_Toe_Ik
+  - first:
+      4: 400232
+    second: R_Toe_Jnt
+  - first:
+      4: 400234
+    second: R_Wrist_Jnt
+  - first:
+      4: 400236
+    second: R_Wrist_Ornt_Con
+  - first:
+      4: 400238
+    second: Rig_Group
+  - first:
+      4: 400240
+    second: Root_Jnt
+  - first:
+      4: 400242
+    second: Spine_1_Con
+  - first:
+      4: 400244
+    second: Spine_1_Jnt
+  - first:
+      4: 400246
+    second: Spine_2_Con
+  - first:
+      4: 400248
+    second: Spine_2_Jnt
+  - first:
+      4: 400250
+    second: Spine_3_Con
+  - first:
+      4: 400252
+    second: Spine_3_Jnt
+  - first:
+      43: 4300000
+    second: DwarfHero_Model
+  - first:
+      74: 7400000
+    second: anm_dwarfHero_idle
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: DwarfHero_Model
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -279,7 +797,7 @@ ModelImporter:
       name: hero_hair
     second: {fileID: 2100000, guid: 8c7ef3bb147760748a9f9c7f44990a22, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -303,7 +821,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -314,6 +832,7 @@ ModelImporter:
     - serializedVersion: 16
       name: anm_dwarfHero_idle
       takeName: anm_dwarfHero_idle
+      internalID: 0
       firstFrame: 60
       lastFrame: 120
       wrapMode: 0
@@ -345,475 +864,46 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
-    human:
-    - boneName: Center_Jnt
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Hip_Jnt
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Hip_Jnt
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Knee_Jnt
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Knee_Jnt
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ankle_Jnt
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ankle_Jnt
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Spine_2_Jnt
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Spine_3_Jnt
-      humanName: Chest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Neck_Jnt
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Head_Jnt
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Clav_Jnt
-      humanName: LeftShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Clav_Jnt
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Shoulder_Jnt
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Shoulder_Jnt
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Elbow_Jnt
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Elbow_Jnt
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Wrist_Jnt
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Wrist_Jnt
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ball_Jnt
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ball_Jnt
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_EyeBall_Jnt
-      humanName: LeftEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_EyeBall_Jnt
-      humanName: RightEye
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Jaw_Jnt
-      humanName: Jaw
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_1_Jnt
-      humanName: Left Thumb Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_2_Jnt
-      humanName: Left Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Thumb_3_Jnt
-      humanName: Left Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Index_1_Jnt
-      humanName: Left Index Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Index_2_Jnt
-      humanName: Left Index Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Index_3_Jnt
-      humanName: Left Index Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Middle_1_Jnt
-      humanName: Left Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Middle_2_Jnt
-      humanName: Left Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Middle_3_Jnt
-      humanName: Left Middle Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ring_1_Jnt
-      humanName: Left Ring Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ring_2_Jnt
-      humanName: Left Ring Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Ring_3_Jnt
-      humanName: Left Ring Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Little_1_Jnt
-      humanName: Left Little Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Little_2_Jnt
-      humanName: Left Little Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: L_Little_3_Jnt
-      humanName: Left Little Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_1_Jnt
-      humanName: Right Thumb Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_2_Jnt
-      humanName: Right Thumb Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Thumb_3_Jnt
-      humanName: Right Thumb Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Index_1_Jnt
-      humanName: Right Index Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Index_2_Jnt
-      humanName: Right Index Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Index_3_Jnt
-      humanName: Right Index Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Middle_1_Jnt
-      humanName: Right Middle Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Middle_2_Jnt
-      humanName: Right Middle Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Middle_3_Jnt
-      humanName: Right Middle Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ring_1_Jnt
-      humanName: Right Ring Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ring_2_Jnt
-      humanName: Right Ring Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Ring_3_Jnt
-      humanName: Right Ring Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Little_1_Jnt
-      humanName: Right Little Proximal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Little_2_Jnt
-      humanName: Right Little Intermediate
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: R_Little_3_Jnt
-      humanName: Right Little Distal
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Chest_Jnt
-      humanName: UpperChest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
+    serializedVersion: 3
+    human: []
     skeleton:
     - name: anm_dwarfHero_idle(Clone)
       parentName: 
@@ -1457,14 +1547,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: Root_Jnt
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 73c06c49c4293504589ad384aeacc0e0,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
