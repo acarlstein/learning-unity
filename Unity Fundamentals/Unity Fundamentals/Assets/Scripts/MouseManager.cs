@@ -87,7 +87,8 @@ public class MouseManager : MonoBehaviour
                 case GameObjectSelected.Doorway:
                     Debug.Log("Click Doorway");
                     Transform transformDoorway = hit.collider.gameObject.transform;
-                    onClickEnvironment.Invoke(transformDoorway.position);
+                    //onClickEnvironment.Invoke(transformDoorway.position);
+                    onClickEnvironment.Invoke(transformDoorway.position + transform.forward * 10);
                     break;
                 case GameObjectSelected.Item:
                     Debug.Log("Click Item");

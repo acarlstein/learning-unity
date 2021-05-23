@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class NPCController : MonoBehaviour
 {
     public float patrolTimeInSeconds = 10.0f;
-    public float agroRange = 5f;
+    public float aggroRange = 5f;
     public Transform[] waypoints;
 
     private int index;
@@ -36,7 +36,7 @@ public class NPCController : MonoBehaviour
 
         if (waypoints.Length > 0)
         {
-            InvokeRepeating("Patrol", 0, patrolTimeInSeconds);
+            InvokeRepeating("Patrol", Random.Range(0, patrolTimeInSeconds), patrolTimeInSeconds);
         }
         
     }
@@ -57,7 +57,7 @@ public class NPCController : MonoBehaviour
         agent.speed = agentSpeed / 2;
 
         if (player != null
-            && Vector3.Distance(transform.position, player.position) < agroRange)
+            && Vector3.Distance(transform.position, player.position) < aggroRange)
         {
             agent.destination = player.position;
             agent.speed = agentSpeed;
@@ -67,5 +67,11 @@ public class NPCController : MonoBehaviour
     private void Update()
     {
         animator.SetFloat("Speed", agent.velocity.magnitude);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 }

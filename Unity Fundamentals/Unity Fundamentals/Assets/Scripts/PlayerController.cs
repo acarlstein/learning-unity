@@ -20,4 +20,9 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", agent.velocity.magnitude);  
     }
 
+    public void SetDestination(Vector3 destination)
+    {
+        agent.destination = destination;
+    }
+
 }
