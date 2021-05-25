@@ -61,8 +61,8 @@ public class CharacterStats_SO : ScriptableObject
 
     private int increaseOrDefaultToMax(int amount, int max)
     {
-        int temp = amount + max;
-        return (temp > max) ? max : temp;
+        int newAmount = amount + max;
+        return (newAmount > max) ? max : newAmount;
     }
 
     public void ApplyMana(int manaAmount)
@@ -79,7 +79,6 @@ public class CharacterStats_SO : ScriptableObject
     {
         weapon = weaponPickUp;
         currentDamage = baseDamage + weapon.itemDefinition.itemAmount;
-
     }
 
     public void EquipArmor(ItemPickUp armorPickUp,
@@ -126,6 +125,86 @@ public class CharacterStats_SO : ScriptableObject
     {
         currentMana = DecreaseOrDefaultToZero(currentMana, amount);
     }
+
+    public bool UnEquipWeapon(ItemPickUp weaponPickUp, 
+                              CharacterInventory characterInventory, 
+                              GameObject weaponSlot)
+    {
+        bool isSameWeapon = false;
+        if (weapon != null)
+        {
+            if (weapon == weaponPickUp)
+            {
+                isSameWeapon = true;
+            }
+           
+            DestroyObject(weaponSlot.transform.GetChild(0).gameObject);
+            weapon = null;
+            currentDamage = baseDamage;
+        }
+        return isSameWeapon;
+    }
+
+    public void DestroyObject(GameObject gameObject)
+    {
+
+    }
+
+    /* TODO: Try if something like below is possible. In this way, we can eliminate the switch statement:
+      var propName = armorPickUp.itemDefinition.itemArmorSubType.ToString().toLowerCase().concat("Armor");
+      if (this[propName] != null){
+        if (this[propName] == armorPickUp){
+            isSameArmor = true;
+        }
+        currentResistance -= armorPickUp.itemDefinition.itemAmount;
+        headArmor = null;
+      }
+      Note: Reflection is normally slow so find out if there is a way to do it without it.
+    */
+    public bool UnEquipArmor(ItemPickUp armorPickUp,
+                            CharacterInventory characterInventory)
+    {
+        bool isSameArmor = false;
+        switch (armorPickUp.itemDefinition.itemArmorSubType)
+        {
+            case ItemArmorSubType.Head:
+                isSameArmor = unEquipArmorIfApplicable(headArmor, armorPickUp);
+                break;
+            case ItemArmorSubType.Chest:
+                isSameArmor = unEquipArmorIfApplicable(chestArmor, armorPickUp);
+                break;
+            case ItemArmorSubType.Hands:
+                isSameArmor = unEquipArmorIfApplicable(handsArmor, armorPickUp);
+                break;
+            case ItemArmorSubType.Legs:
+                isSameArmor = unEquipArmorIfApplicable(legsArmor, armorPickUp);
+                break;
+            case ItemArmorSubType.Boots:
+                isSameArmor = unEquipArmorIfApplicable(footArmor, armorPickUp);
+                break;
+            default:
+                break;
+        }
+
+        return isSameArmor;
+    }
+
+    // TODO: Verify if this works
+    private bool unEquipArmorIfApplicable(ItemPickUp currentArmor, ItemPickUp newArmor)
+    {
+        bool isSameArmor = false;
+        if (currentArmor != null)
+        {
+            if (currentArmor == newArmor)
+            {
+                isSameArmor = true;
+            }
+            currentResistance -= newArmor.itemDefinition.itemAmount;
+            currentArmor = null;
+        }
+        return isSameArmor;
+    }
+
     #endregion
 
     #region Level Up and Death
