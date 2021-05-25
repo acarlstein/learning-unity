@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class ItemPickUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ItemPickUp_SO itemDefinition;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
