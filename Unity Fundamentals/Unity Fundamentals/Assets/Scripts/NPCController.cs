@@ -19,6 +19,9 @@ public class NPCController : MonoBehaviour
     private Animator animator;
     private NavMeshAgent agent;
 
+    [Header("Aggro Radius Debugging")]
+    public bool doShowAggro = true; 
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -71,7 +74,9 @@ public class NPCController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, aggroRange);
+        if (doShowAggro) {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, aggroRange);
+        }
     }
 }
