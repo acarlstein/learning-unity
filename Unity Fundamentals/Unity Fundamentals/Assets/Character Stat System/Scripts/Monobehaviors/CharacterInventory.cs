@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class CharacterInventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    #region Variable Declarations
+    public static CharacterInventory instance;
+    #endregion
 
-    // Update is called once per frame
-    void Update()
+    #region Initializations
+    public void Start()
     {
-        
+        instance = this;
     }
+    #endregion
 }

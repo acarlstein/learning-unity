@@ -35,11 +35,12 @@ public class CharacterStats_SO : ScriptableObject
     public float currentResistance = 0.0f;
 
     public float currentEncumbrance = 0.0f;
+    public float maxEncumbrance = 0.0f;
 
-    public int charExperience = 0;
-    public int charLevel = 0;
+    public int experience = 0;
+    public int level = 0;
 
-    public CharLevelUps[] charLevelUps;
+    public CharLevelUps[] characterLevelUps;
     #endregion
 
     [System.Serializable]
@@ -48,8 +49,9 @@ public class CharacterStats_SO : ScriptableObject
         public int maxHealth;
         public int maxMana;
         public int maxWealth;
+        public int baseDamage;
         public float baseResistance;
-        public float maxEncumbreance;
+        public float maxEncumbrance;
     }
 
     #region Increase Stats
@@ -75,7 +77,8 @@ public class CharacterStats_SO : ScriptableObject
     }
 
     public void EquipWeapon(ItemPickUp weaponPickUp,
-                            CharacterInventory characterInventory)
+                            CharacterInventory characterInventory,
+                            GameObject gameObject)
     {
         weapon = weaponPickUp;
         currentDamage = baseDamage + weapon.itemDefinition.itemAmount;
@@ -208,11 +211,24 @@ public class CharacterStats_SO : ScriptableObject
     #endregion
 
     #region Level Up and Death
+    private void LevelUp()
+    {
+        level++;
+        // TODO Show level up
+        maxHealth = characterLevelUps[level - 1].maxHealth;
+        maxMana = characterLevelUps[level - 1].maxMana;
+        maxWealth = characterLevelUps[level - 1].maxWealth;
+        baseDamage = characterLevelUps[level - 1].baseDamage;
+        baseResistance = characterLevelUps[level - 1].baseResistance;
+        maxEncumbrance = characterLevelUps[level - 1].maxEncumbrance;
+    }
+
     private void Death()
     {
-        // Tell Game Manager to change to Death State to trigger respawn
+        // TODO: Tell Game Manager to change to Death State to trigger respawn
         // Perform death visualization of player
     }
+
     #endregion
 
    
