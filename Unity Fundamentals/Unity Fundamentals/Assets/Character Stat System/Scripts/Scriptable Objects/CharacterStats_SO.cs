@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+//using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(menuName="Character/Stats", fileName="NewStats", order=1)]
@@ -231,5 +232,14 @@ public class CharacterStats_SO : ScriptableObject
 
     #endregion
 
-   
+    #region Save Character Data
+    public void saveCharacterData()
+    {
+        //saveDataOnClose = true;
+        /* If there is a reference of UnityEditor inside our scene
+           the game will not build */
+        //EditorUtility.SetDirty(this);
+    }
+    #endregion
+
 }

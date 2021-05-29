@@ -102,4 +102,16 @@ public class CharacterStats : MonoBehaviour
         return characterDefinition.weapon;
     }
     #endregion
+
+    #region Updates
+
+    private const int MOUSE_MIDDLE_CLICK = 2;
+    private void Update()
+    {
+        //if (Input.GetMouseButtonDown(MOUSE_MIDDLE_CLICK))
+        //{
+        //    characterDefinition.saveCharacterData();
+        //}
+    }
+    #endregion
 }
