@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 031b48f455945dc46831b625b2470261
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pointer: {fileID: 2800000, guid: 70a6242c401554f4184cfdf2c2b7f3f8, type: 3}
+  - target: {fileID: 2800000, guid: 66f3104c17f0ee1408005db9521d09ee, type: 3}
+  - doorway: {fileID: 2800000, guid: 5148d3e7a989fe549aeda727005a9bf3, type: 3}
+  - combat: {fileID: 2800000, guid: 6ab21ca9b29b59a468df4b3cf6cd8db8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
