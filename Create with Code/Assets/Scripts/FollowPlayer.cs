@@ -36,7 +36,6 @@ public class FollowPlayer : MonoBehaviour
         {
             if (isAllowedToRotate)
             {
-                Debug.Log("viewNumber:" + viewNumber);
                 isAllowedToRotate = false;
                 doRotateBack = true;
                 transform.Rotate(Vector3.up, 90.0f);
@@ -52,6 +51,5 @@ public class FollowPlayer : MonoBehaviour
         }
         
         transform.position = player.transform.position + cameraViews[viewNumber];
-       
     }
 }
