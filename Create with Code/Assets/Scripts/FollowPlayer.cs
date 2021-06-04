@@ -22,9 +22,7 @@ public class FollowPlayer : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            Debug.Log("Before viewNumber:" + viewNumber);
             viewNumber = ++viewNumber % cameraViews.Length;
-            Debug.Log("After viewNumber:" + viewNumber);
         }
     }
 

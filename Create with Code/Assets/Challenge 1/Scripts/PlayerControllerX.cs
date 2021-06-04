@@ -7,7 +7,8 @@ public class PlayerControllerX : MonoBehaviour
     public float speed = 0.5f;
     public float rotationSpeed = 100.0f;
     public bool doInvertYAxis = false;
-    
+    public InputController inputController;
+
     private float verticalInput;
     
     // Update is called once per frame
