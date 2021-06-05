@@ -9,6 +9,19 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10.0f;
     public GameObject projectilePrefab;
 
+    public int pooledAmmunition = 10;
+    private List<GameObject> bullets;
+
+    private void Start()
+    {
+        bullets = new List<GameObject>();
+        for (int i = 0; i < pooledAmmunition; ++i)
+        {
+            GameObject bullet = (GameObject)Instantiate(projectilePrefab);
+            bullet.SetActive(false);
+            bullets.Add(bullet);
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -40,7 +53,20 @@ public class PlayerController : MonoBehaviour
         if (InputController.DoShoot())
         {
             // Spawn a projectile at the player's location with prefab's rotation
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            //Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
+            for(int i = 0; i < bullets.Count; ++i)
+            {
+                if (!bullets[i].activeInHierarchy)
+                {
+                    bullets[i].transform.position = transform.position;
+                    bullets[i].transform.rotation = transform.rotation;      
+                    bullets[i].SetActive(true);
+
+                    // We don't want to activate all the bullets, just the one we shoot.
+                    break; 
+                }
+            }
         }
     }
 }

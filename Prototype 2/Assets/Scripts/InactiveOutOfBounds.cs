@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyOutOfBounds: MonoBehaviour
+public class InactiveOutOfBounds : MonoBehaviour
 {
     private readonly float topBound = 40.0f;
     private readonly float lowerBound = -10.0f;
@@ -10,10 +10,12 @@ public class DestroyOutOfBounds: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.z > topBound
-            || transform.position.z < lowerBound)
+        if(gameObject.activeInHierarchy
+            && (transform.position.z > topBound
+            || transform.position.z < lowerBound))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }        
     }
 }
