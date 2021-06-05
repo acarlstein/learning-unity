@@ -7,13 +7,17 @@ public class FollowPlayer : MonoBehaviour
 
     public GameObject player;
     public InputController inputController;
-    
-    public int viewNumber = 0;
+
+    private const int BEHIND_VIEW = 0;
+    private const int SIDE_VIEW = 2;
+
+    public int viewNumber = BEHIND_VIEW;
     private Vector3[] cameraViews = {
         new Vector3(0, 5, -8), // Behind
         new Vector3(0, 4.2f, 0), // Inside
         new Vector3(-14, 4, 0) // Side        
     };
+    
 
     //private Vector3 offset;
     private bool isAllowedToRotate = true;
@@ -33,10 +37,9 @@ public class FollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    //void Update()
     void LateUpdate()
     {
-        if (viewNumber == 2)
+        if (viewNumber == SIDE_VIEW)
         {
             if (isAllowedToRotate)
             {
