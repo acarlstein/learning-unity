@@ -7,20 +7,11 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
-    public GameObject projectilePrefab;
-
-    public int pooledAmmunition = 10;
-    private List<GameObject> bullets;
+    public ObjectPooler ammunitionPool;
 
     private void Start()
     {
-        bullets = new List<GameObject>();
-        for (int i = 0; i < pooledAmmunition; ++i)
-        {
-            GameObject bullet = (GameObject)Instantiate(projectilePrefab);
-            bullet.SetActive(false);
-            bullets.Add(bullet);
-        }
+ 
     }
 
     // Update is called once per frame
@@ -52,21 +43,11 @@ public class PlayerController : MonoBehaviour
     {
         if (InputController.DoShoot())
         {
-            // Spawn a projectile at the player's location with prefab's rotation
-            //Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-
-            for(int i = 0; i < bullets.Count; ++i)
-            {
-                if (!bullets[i].activeInHierarchy)
-                {
-                    bullets[i].transform.position = transform.position;
-                    bullets[i].transform.rotation = transform.rotation;      
-                    bullets[i].SetActive(true);
-
-                    // We don't want to activate all the bullets, just the one we shoot.
-                    break; 
-                }
-            }
+            GameObject bullet = ammunitionPool.GetPooledObject();
+            if (bullet == null) throw new System.NullReferenceException("Cannot obtain bullet");
+            bullet.transform.position = transform.position;
+            bullet.transform.rotation = transform.rotation;
+            bullet.SetActive(true);
         }
     }
 }
