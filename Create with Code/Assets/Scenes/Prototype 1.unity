@@ -1421,7 +1421,7 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.5
     y: 0
     width: 0.5
     height: 1
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57398e86f6aed7b469803149bac7b4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyboardScheme: 0
+  keyboardScheme: 1
 --- !u!1 &560832990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,7 +1819,7 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.5
+    x: 0
     y: 0
     width: 0.5
     height: 1
@@ -1869,7 +1869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57398e86f6aed7b469803149bac7b4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyboardScheme: 1
+  keyboardScheme: 0
 --- !u!1001 &681377044
 PrefabInstance:
   m_ObjectHideFlags: 0
