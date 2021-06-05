@@ -6,8 +6,9 @@ public class FollowPlayer : MonoBehaviour
 {
 
     public GameObject player;
+    public InputController inputController;
     
-    public int viewNumber = 1;
+    public int viewNumber = 0;
     private Vector3[] cameraViews = {
         new Vector3(0, 5, -8), // Behind
         new Vector3(0, 4.2f, 0), // Inside
@@ -20,10 +21,15 @@ public class FollowPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (inputController.DoChangeView())
         {
-            viewNumber = ++viewNumber % cameraViews.Length;
+            ChangeView();
         }
+    }
+
+    public void ChangeView()
+    {
+        viewNumber = ++viewNumber % cameraViews.Length;
     }
 
     // Update is called once per frame

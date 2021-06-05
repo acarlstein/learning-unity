@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
-    public enum KeyboardScheme { WASDQE, IJKLUO}
-    public KeyboardScheme keyboardScheme = KeyboardScheme.WASDQE;
+    public enum KeyboardScheme { WASDQEF, HIJKLUO}
+    public KeyboardScheme keyboardScheme = KeyboardScheme.WASDQEF;
 
     public float GetHorizontal()
     {
-        return (keyboardScheme == KeyboardScheme.WASDQE) 
+        return (keyboardScheme == KeyboardScheme.WASDQEF) 
             ? Input.GetAxis("Horizontal") 
             : Input.GetAxis("Horizontal JL");
     }
 
     public float GetVertical()
     {
-        return (keyboardScheme == KeyboardScheme.WASDQE)
+        return (keyboardScheme == KeyboardScheme.WASDQEF)
         ? Input.GetAxis("Vertical")
         : Input.GetAxis("Vertical IK");
     }
 
     public float GetTopDiagonal()
     {
-        return (keyboardScheme == KeyboardScheme.WASDQE)
+        return (keyboardScheme == KeyboardScheme.WASDQEF)
         ? Input.GetAxis("Q and E")
         : Input.GetAxis("U and O");
     }
+
+    public bool DoChangeView()
+    {
+        return (keyboardScheme == KeyboardScheme.WASDQEF)
+        ? Input.GetKeyUp(KeyCode.F)
+        : Input.GetKeyUp(KeyCode.H);
+    }
+
 }
