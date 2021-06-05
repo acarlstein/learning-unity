@@ -8,4 +8,9 @@ public class InputController
     {
         return Input.GetAxis("Horizontal");
     }
+
+    public static bool DoShoot()
+    {
+        return Input.GetKeyDown(KeyCode.Space);
+    }
 }

@@ -7,12 +7,15 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
+    public GameObject projectilePrefab;
+
 
     // Update is called once per frame
     void Update()
     {
         ForceBoundries();
         MoveHorizontally();
+        PerformShooting();
     }
    
     private void ForceBoundries()
@@ -30,5 +33,14 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = InputController.GetHorizontal();
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+    }
+
+    private void PerformShooting()
+    {
+        if (InputController.DoShoot())
+        {
+            // Spawn a projectile at the player's location with prefab's rotation
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
