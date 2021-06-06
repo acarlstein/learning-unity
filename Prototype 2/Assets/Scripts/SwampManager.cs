@@ -7,14 +7,29 @@ public class SwampManager : MonoBehaviour
 
     public GameObject[] animalPrefabs;
     public float rangeX = 20;
-    private readonly float positionZ = 20;
+    public int poolSize = 10;
 
+    private readonly float positionZ = 20;
     private float startDelay = 2.0f;
     private float spawnInterval = 1.5f;
+    private List<ObjectPooler> objectPoolers;
 
+    private void Awake()
+    {
+        
+    }
     private void Start()
     {
-        InvokeRepeating("SpawnRandomAninmal", startDelay, spawnInterval);
+        objectPoolers = new List<ObjectPooler>();
+        for (int i = 0; i < animalPrefabs.Length; ++i)
+        {
+            GameObject gameObject = new GameObject();
+            ObjectPooler objectPooler = gameObject.AddComponent<ObjectPooler>();
+            objectPooler.pooledObject = animalPrefabs[i];
+            objectPoolers.Add(objectPooler);
+        }
+
+        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
@@ -22,19 +37,19 @@ public class SwampManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SpawnRandomAninmal();
+            SpawnRandomAnimal();
         }        
     }
 
-    void SpawnRandomAninmal()
+    void SpawnRandomAnimal()
     {
+        int animalIndex = Random.Range(0, animalPrefabs.Length);
+        GameObject animal = objectPoolers[animalIndex].GetPooledObject();
+        animal.SetActive(true);
+
         float positionX = Random.Range(-rangeX, rangeX);
         Vector3 spawnPosition = new Vector3(positionX, 0, positionZ);
-        int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Instantiate(
-            animalPrefabs[animalIndex],
-            spawnPosition,
-            animalPrefabs[animalIndex].transform.rotation
-        );
+
+        Instantiate(animal, spawnPosition, animal.transform.rotation);
     }
 }
