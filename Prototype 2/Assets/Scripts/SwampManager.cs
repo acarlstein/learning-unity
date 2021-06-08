@@ -10,14 +10,10 @@ public class SwampManager : MonoBehaviour
     public int poolSize = 10;
 
     private readonly float positionZ = 20;
-    private float startDelay = 2.0f;
-    private float spawnInterval = 1.5f;
+    private readonly float startDelay = 2.0f;
+    private readonly float spawnInterval = 1.5f;
     private List<ObjectPooler> objectPoolers;
 
-    private void Awake()
-    {
-        
-    }
     private void Start()
     {
         objectPoolers = new List<ObjectPooler>();
@@ -29,7 +25,7 @@ public class SwampManager : MonoBehaviour
             objectPoolers.Add(objectPooler);
         }
 
-        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
+        InvokeRepeating(nameof(SpawnRandomAnimal), startDelay, spawnInterval);
     }
 
     // Update is called once per frame
